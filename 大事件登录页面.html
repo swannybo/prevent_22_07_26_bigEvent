@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大事件登录页面</title>
+    <!-- 引入Layui的css样式 -->
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <!-- 引入自己css文件 -->
+    <link rel="stylesheet" href="./assets/css/大事件登录注册页面.css">
 </head>
+
 <body>
-    
+    <!-- 头部logo部分 -->
+    <div class="layui-main">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+
+    <!-- 登录页面部分 -->
+    <div class="login">
+        <!-- 登录页面标题 -->
+        <div class="title"> </div>
+        <!-- 去登录部分 -->
+        <div class="register">
+            <!-- 用户登录部分 -->
+            <form class="layui-form" action="" id="reglist">
+                <div class="layui-form-item">
+                    <!-- 字体图标部分 -->
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required|ipt" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码部分 -->
+                <div class="layui-form-item">
+                    <!-- 字体图标部分 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 登录部分 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn  layui-btn-fluid  layui-btn-normal" lay-submit
+                        lay-filter="formDemo">登录</button>
+                </div>
+                <!-- 去注册部分 -->
+                <div class="layui-form-item bobo">
+                    <a href="javascript:;" id="reg">去注册账号</a>
+                </div>
+            </form>
+        </div>
+        <!-- 去注册部分 -->
+        <div class="enroll">
+            <!-- 用户注册部分 -->
+            <form class="layui-form" action="" id="erllist">
+                <div class="layui-form-item">
+                    <!-- 字体图标部分 -->
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required|ipt" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码部分 -->
+                <div class="layui-form-item">
+                    <!-- 字体图标部分 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 确认密码部分 -->
+                <div class="layui-form-item">
+                    <!-- 字体图标部分 -->
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="password" name="repassword" required lay-verify="required|pwd|erlpwd"
+                        placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 注册部分 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn  layui-btn-fluid  layui-btn-normal" lay-submit
+                        lay-filter="formDemo">注册</button>
+                </div>
+                <!-- 去登录部分 -->
+                <div class="layui-form-item bobo">
+                    <a href="javascript:;" id="erl">去登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- 引入Layui的js文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
+    <!-- 引入jQuery文件 -->
+    <script src="./assets/lib/jquery.js"></script>
+    <!-- 引入自己封装的 ajaxPrefilter()函数 -->
+    <script src="./assets/js/ajaxPrefilter()函数.js"></script>
+    <!-- 引入自己的js文件 -->
+    <script src="./assets/js/大事件登录注册页面.js"></script>
 </body>
+
 </html>
